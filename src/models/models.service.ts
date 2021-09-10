@@ -71,8 +71,7 @@ export class ModelsService {
     } else {
       data.where('type != Add');
     }
-    console.log(await data.getRawMany());
 
-    return await this.transectionRepository.find();
+    return await data.getRawMany();
   }
 }
